@@ -21,9 +21,6 @@ class PageObject(object):
     objID = 0
     title = ""
     body = ""
-    # def __init__(self, userID,objID,title,body):
-    #     return pageObject
-    # userID, objID, title, body
 
 def make_page():
     page = PageObject()
