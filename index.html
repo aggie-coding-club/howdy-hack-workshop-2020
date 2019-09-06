@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>
+			"Send request"
+		</title>
+	</head>
+	<body>
+		<button onclick="send_req()">
+			Send Request
+		</button>
+		<div id="data"></div>
+	</body>
+	<script type="text/javascript">
+		function send_req(){
+			fetch('https://jsonplaceholder.typicode.com/posts')
+			  .then(response => response.text())
+			  .then(res => {
+		  		document.getElementById('data').innerText = res;
+		  		// console.log(res);
+			  });
+		}
+	</script>
+</html>
