@@ -3,6 +3,14 @@
 </p>
 All things Howdy Hack ACC workshop
 
+## Requirements
+
+- Python
+
+> If you are on Windows you can use [Scoop](https://scoop.sh/) to install python: `scoop install python`
+
+> If you are on MacOs you can use [Homebrew](https://brew.sh/) to install python: `brew install python`
+
 ## Branches
 
 - consume: Branch w/ template code for consuming an API
