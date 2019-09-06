@@ -11,10 +11,11 @@ All things Howdy Hack ACC workshop
 
 > If you are on MacOs you can use [Homebrew](https://brew.sh/) to install python: `brew install python`
 
-## Branches
+## Files
 
-- consume: Branch w/ template code for consuming an API
-- create: Branch w/ template code for creating a simple API using Flask
+- `access.py`: template code for consuming an API
+- `api.py`: Branch w/ template code for creating a simple API using Flask
+- `index.html`: sample web page requesting data from API
 
 ## Presentation
 
