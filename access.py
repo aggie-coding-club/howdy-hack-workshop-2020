@@ -13,23 +13,20 @@ res = requests.get('https://jsonplaceholder.typicode.com/posts')
 print(res.json()[1]["title"])
 
 # Response JSON string object
-json_string = json.loads(res.text)[1]
+data = json.loads(res.text)[1]
 
 
-class PageObject(object):
+class PostObject(object):
     userID = 0
     objID = 0
     title = ""
     body = ""
 
-def make_page():
-    page = PageObject()
-    page.userID = json_string['userId']
-    page.objID = json_string['id']
-    page.title = json_string['title']
-    page.body = json_string['body']
-    return page
+post = PostObject()
+post.userID = data['userId']
+post.objID = data['id']
+post.title = data['title']
+post.body = data['body']
 
-myPage = make_page()
 
-print('My object properties: \nUser ID: ', myPage.userID, '\nID: ', myPage.objID, '\nTitle: ', myPage.title, '\nBody: ', myPage.body)
+print('My object properties: \nUser ID: ', post.userID, '\nID: ', post.objID, '\nTitle: ', post.title, '\nBody: ', post.body)
