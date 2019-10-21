@@ -1,6 +1,6 @@
 import requests
 import json
-# Sending GET request to retrieve list of posts
+# Sending GET request to retrieve person 3
 res = requests.get('https://swapi.co/api/people/3/')
 
 # Display the response as a string
@@ -9,7 +9,7 @@ print(res.text)
 # Print the dictionary form of the JSON returned from the API
 print(res.json())
 
-# Access the title of the 2nd post returned
+# Access the name of the person returned
 print(res.json()["name"])
 # Response JSON string object
 data = res.json()
