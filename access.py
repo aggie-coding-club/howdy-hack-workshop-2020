@@ -11,9 +11,8 @@ res = requests.get('https://jsonplaceholder.typicode.com/posts')
 
 # Access the title of the 2nd post returned
 print(res.json()[1]["title"])
-
 # Response JSON string object
-data = json.loads(res.text)[1]
+data = res.json()[1]
 
 
 class PostObject(object):
