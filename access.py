@@ -1,29 +1,44 @@
 import requests
 import json
-# Sending GET request to retrieve person 3
-res = requests.get('https://swapi.co/api/people/3/')
+
+# Sending GET request to retrieve post 1
+res = requests.get('https://jsonplaceholder.typicode.com/posts/1/')
 
 # Display the response as a string
 print(res.text)
 
 # Print the dictionary form of the JSON returned from the API
-print(res.json())
+print("\n\n", res.json())
 
-# Access the name of the person returned
-print(res.json()["name"])
+# Access the title of the post returned
+print("\n\ntitle:", res.json()["title"])
+
 # Response JSON string object
 data = res.json()
 
 
-class StarWarsPerson(object):
-    name = ""
-    height = ""
-    birthYear = ""
+class Post(object):
+    userId = ""
+    id = ""
+    title = ""
+    body = ""
 
-post = StarWarsPerson()
-post.name = data['name']
-post.height = data['height']
-post.birthYear = data['birth_year']
+    def to_dict(self):
+        return {
+            'userId' : self.userId,
+            'id' : self.id,
+            'title' : self.title,
+            'body' : self.body
+        }
 
+post = Post()
+post.userId = 1
+post.id = 2021
+post.title = "Howdy Hack"
+post.body = "Ayy Whoop"
 
-print('My star wars person is: \nName: ', post.name, '\nHeight: ', post.height, '\nBirth Year: ', post.birthYear)
+print('\n\nMy post is: ', post.to_dict())
+
+res = requests.post('https://jsonplaceholder.typicode.com/posts/', post.to_dict())
+
+print(res.text)
