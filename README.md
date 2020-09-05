@@ -5,7 +5,7 @@ All things Howdy Hack ACC workshop
 
 ## Requirements
 
-- Python
+- Python 3
 
 > If you are on Windows you can use [Scoop](https://scoop.sh/) to install python: `scoop install python`
 
