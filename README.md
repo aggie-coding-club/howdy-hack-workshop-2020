@@ -19,4 +19,4 @@ All things Howdy Hack ACC workshop
 
 ## Presentation
 
-[Google Slides](https://docs.google.com/presentation/d/1qHQGn44jnhpofwGykfEihYUMCcLGHBXXVgA6Mm5K5_w/edit?usp=sharing)
+[Google Slides](https://docs.google.com/presentation/d/1YAIDYyaZPj5lasHvbBQvEIu22cdrhdg3j8jl9ZDagG8/edit?usp=sharing)
