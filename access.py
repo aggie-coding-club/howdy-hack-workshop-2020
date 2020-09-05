@@ -41,4 +41,4 @@ print('\n\nMy post is: ', post.to_dict())
 
 res = requests.post('https://jsonplaceholder.typicode.com/posts/', post.to_dict())
 
-print(res.text)
+print("\n\nStatus code: ", res.status_code, "\nPOST sent: ", res.text)
